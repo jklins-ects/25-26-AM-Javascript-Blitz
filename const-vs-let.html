@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="demo"></div>
+        <div id="demo2"></div>
+        <script>
+            // let demo = document.getElementById("demo");
+            // const PI = 3.14;
+            // var dog = "Marty";
+            // let val1 = Number(prompt("Enter a number"));
+            // let val2 = Number(prompt("Enter another number"));
+            // console.log(typeof val1);
+            // val1++; //same as val1 += 1
+            // alert(`${val1} + ${val2} = ${val1 + val2}`);
+
+            //truthy and falsey
+            console.log(true); //true
+            console.log(Boolean(-1)); //truthy (anything not 0)
+            console.log(Boolean(0)); //falsey (0)
+            console.log(Boolean(undefined)); //falsey
+            console.log(Boolean("")); //falsey
+            console.log(Boolean([])); //true
+            console.log(Boolean(NaN)); //false
+
+            let name = prompt("Enter your name").trim();
+            if (name) {
+                alert("Hello " + name);
+            } else {
+                alert("Just give me your name!");
+            }
+        </script>
+    </body>
+</html>
